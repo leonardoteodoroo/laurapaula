@@ -40,18 +40,18 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-4 z-10 pt-24 pb-10 flex flex-col items-center text-center">
 
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl leading-tight text-off-white mb-6 max-w-4xl opacity-0 animate-[fadeInUp_1s_ease-out_0.3s_forwards]">
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl leading-tight text-off-white mb-6 max-w-4xl opacity-0 animate-[fadeInUp_4s_ease-out_1.2s_forwards]">
           Quando foi a última vez que você se sentiu segura para <span className="italic text-emerald-500">usar uma sandália?</span>
         </h1>
 
-        <div className="max-w-2xl mb-10 opacity-0 animate-[fadeInUp_1s_ease-out_0.6s_forwards]">
+        <div className="max-w-2xl mb-10 opacity-0 animate-[fadeInUp_4s_ease-out_2.4s_forwards]">
           <p className="font-sans text-lg md:text-xl text-gray-300 font-light leading-relaxed mb-6">
             Você não deveria precisar esconder seus pés. Muito menos sentir vergonha deles... Mas quem sofre com rachaduras, fissuras e aquele calcanhar grosso que incomoda até no lençol… sabe como isso mexe com a autoestima.
           </p>
           <div className="w-16 h-px bg-emerald-500/50 mx-auto"></div>
         </div>
 
-        <div className="opacity-0 animate-[fadeInUp_1s_ease-out_0.9s_forwards]">
+        <div className="opacity-0 animate-[fadeInUp_4s_ease-out_6s_forwards]">
           <a
             href={WHATSAPP_LINK}
             target="_blank"

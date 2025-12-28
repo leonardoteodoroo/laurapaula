@@ -3,6 +3,27 @@ import { ShieldAlert, RefreshCw, XCircle } from 'lucide-react';
 import { WHATSAPP_LINK } from '../constants';
 
 const Villain: React.FC = () => {
+  const [isGrayscale, setIsGrayscale] = React.useState(false);
+  const imageRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Add a small delay so the user sees it colorful for a moment
+          setTimeout(() => {
+            setIsGrayscale(true);
+          }, 300);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.5 } // Trigger when 50% is visible
+    );
+
+    if (imageRef.current) observer.observe(imageRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="py-20 md:py-32 bg-dark-graphite relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -18,7 +39,7 @@ const Villain: React.FC = () => {
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
               E, no fundo, talvez você já tenha até tentado de tudo. E nada funciona por muito tempo.
-              <span className="block mt-4 !text-3xl font-bold text-red-500 italic">
+              <span className="block mt-4 text-3xl md:text-4xl font-serif text-red-400 italic">
                 E eu sei que isso cansa.
               </span>
             </p>
@@ -43,11 +64,17 @@ const Villain: React.FC = () => {
           </div>
 
           <div className="w-full md:w-1/2 relative">
-            <div className="relative aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden">
+            <div
+              ref={imageRef}
+              className="relative aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden"
+            >
               <img
-                src="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/11.jpg?v=1766899626?q=80&w=1000&auto=format&fit=crop"
+                src="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/11.jpg?v=1766899626&q=80&w=1000&auto=format&fit=crop"
                 alt="Pés com ressecamento"
-                className="w-full h-full object-cover opacity-85 grayscale hover:grayscale-0 transition-all duration-700"
+                className={`w-full h-full object-cover transition-all duration-[1300ms] ease-in-out ${isGrayscale
+                    ? 'opacity-85 grayscale hover:grayscale-0'
+                    : 'opacity-100 grayscale-0'
+                  }`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-graphite via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">

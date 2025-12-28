@@ -39,6 +39,25 @@
           },
           backgroundImage: {
             'noise': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMGYxMTBjIiBmaWxsLW9wYWNpdHk9IjAuOSIvPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+')",
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translate3d(0, 20px, 0)' },
+              '100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' },
+            },
+            bounceX: {
+              '0%, 100%': { transform: 'translateX(-50%)' },
+              '50%': { transform: 'translateX(-50%) scale(1.1)' },
+            },
+            pulseHandle: {
+              '0%, 100%': { boxShadow: '0 0 0 0 rgba(16, 185, 129, 0.7)', transform: 'translate(-50%, -50%) scale(1)' },
+              '50%': { boxShadow: '0 0 0 10px rgba(16, 185, 129, 0)', transform: 'translate(-50%, -50%) scale(1.1)' },
+            }
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+            'bounce-x': 'bounceX 1s infinite',
+            'pulse-handle': 'pulseHandle 2s infinite',
           }
         }
       }
@@ -73,7 +92,7 @@
   }
 }
 </script>
-  <link rel="stylesheet" href="/index.css">
+
 </head>
 
 <body>

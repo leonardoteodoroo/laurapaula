@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import Hero from './components/Hero';
 import Villain from './components/Villain';
 import Services from './components/Services';
+import BeforeAfter from './components/BeforeAfter';
 import Authority from './components/Authority';
+import SocialProof from './components/SocialProof';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -22,7 +24,9 @@ function App() {
         <Hero />
         <Villain />
         <Services />
+        <BeforeAfter />
         <Authority />
+        <SocialProof />
         <FAQ />
       </main>
       <Footer />
