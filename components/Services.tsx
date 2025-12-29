@@ -10,10 +10,10 @@ const Services: React.FC = () => {
 
       <div className="container mx-auto px-4 mb-12">
         <h2 className="font-serif text-4xl md:text-5xl text-off-white mb-4">
-          Protocolos <span className="italic text-emerald-600">Exclusivos</span>
+          O <span className="italic text-emerald-600">FIM DA BRIGA</span> com as rachaduras.
         </h2>
         <p className="text-gray-400 max-w-xl">
-          Tecnologia e bem-estar unidos para proporcionar a melhor experiência que seus pés já tiveram.
+          O cuidado que vai além de um simples hidratante de farmácia.
         </p>
       </div>
 

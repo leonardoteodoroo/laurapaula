@@ -6,8 +6,8 @@ const CASES = [
         id: 1,
         title: "Reconstrução de Fissuras",
         description: "De gretas profundas que causavam dor ao caminhar, para uma pele totalmente íntegra e regenerada.",
-        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Antes_e_Depois_de_um_tratamento_profundo_para_pes_ressecados_e_com_rachaduras_Olha_essa_tra.webp?v=1766990687&q=80&w=1000&auto=format&fit=crop",
-        after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Antes_e_Depois_de_um_tratamento_profundo_para_pes_ressecados_e_com_rachaduras_Olha_essa_tra_1.webp?v=1766990687&q=80&w=1000&auto=format&fit=crop"
+        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/ressecamento_severo_nos_calcanhares.webp?v=1766991656&q=80&w=1000&auto=format&fit=crop",
+        after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Reconstrucao_de_Fissuras.webp?v=1766901699&q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 2,
@@ -20,8 +20,8 @@ const CASES = [
         id: 3,
         title: "Ressecamento Severo (Toque de Seda)",
         description: "Aquele aspecto 'esbranquiçado' e áspero transformado em uma hidratação profunda que dura de verdade.",
-        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/ressecamento_severo_nos_calcanhares.webp?v=1766991656&q=80&w=1000&auto=format&fit=crop",
-        after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Reconstrucao_de_Fissuras.webp?v=1766901699&q=80&w=1000&auto=format&fit=crop"
+        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Antes_e_Depois_de_um_tratamento_profundo_para_pes_ressecados_e_com_rachaduras_Olha_essa_tra.webp?v=1766990687&q=80&w=1000&auto=format&fit=crop",
+        after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Antes_e_Depois_de_um_tratamento_profundo_para_pes_ressecados_e_com_rachaduras_Olha_essa_tra_1.webp?v=1766990687&q=80&w=1000&auto=format&fit=crop"
     }
 ];
 
@@ -129,13 +129,13 @@ const BeforeAfter: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <span className="text-emerald-500 font-medium tracking-widest uppercase text-xs mb-4 block">
-                        Resultados Reais
+                        ALÍVIO QUE FICA
                     </span>
                     <h2 className="font-serif text-3xl md:text-5xl text-off-white mb-6">
-                        Não é mágica, é <span className="italic text-emerald-600">Ciência</span>
+                        Pé liso? <span className="italic text-emerald-600">Vida Nova!</span>
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg font-light">
-                        Veja a transformação de quem confiou no método e recuperou a saúde dos pés.
+                        Para você parar de esconder o calcanhar toda vez que alguém olha para baixo.
                     </p>
                 </div>
 

@@ -9,7 +9,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'plastica-pes',
     title: "Plástica dos Pés",
     description: "Um protocolo exclusivo que remove calosidades e queratose sem cortes, devolvendo a textura aveludada da pele na primeira sessão.",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/protocolos_exclusivos.webp?v=1766900928?q=80&w=800&auto=format&fit=crop"
+    imageUrl: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/spa_dos_pes.webp?v=1767003239?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 'spa-terapeutico',

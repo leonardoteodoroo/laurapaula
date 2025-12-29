@@ -7,18 +7,18 @@ const ExtraServices: React.FC = () => {
     const extras = [
         {
             title: "Manicure e Pedicure",
-            subtitle: "Com acabamento impecável e materiais 100% esterilizados.",
-            image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1000&auto=format&fit=crop" // Placeholder manicure
+            subtitle: "Mãos que comunicam confiança e pés que finalmente descansam.",
+            image: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/E_essas_unhas_naturaisss_Brasil..._1.webp?v=1766995977?q=80&w=1000&auto=format&fit=crop" // Placeholder manicure
         },
         {
             title: "SPA Labial",
-            subtitle: "Hidratação profunda para lábios renovados e macios.",
-            image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1000&auto=format&fit=crop" // Placeholder lips
+            subtitle: "O fim daquela sensação de boca ressecada que repuxa o dia todo.",
+            image: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/spa_labial.jpg?v=1767003843?v=1767002943q=80&w=1000&auto=format&fit=crop" // Placeholder lips
         },
         {
             title: "Massagem Corporal",
-            subtitle: "Técnicas relaxantes para aliviar tensão e renovar energias.",
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1000&auto=format&fit=crop" // Placeholder massage
+            subtitle: "Para quando o peso da semana parece estar todo carregado nos seus ombros.",
+            image: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/massagens_laura_puala.webp?v=1767004461?q=80&w=1000&auto=format&fit=crop" // Placeholder massage
         }
     ];
 
@@ -30,10 +30,10 @@ const ExtraServices: React.FC = () => {
             <div className="container mx-auto px-4 mb-16">
                 <div className="text-center">
                     <span className="text-emerald-500 font-medium tracking-widest uppercase text-xs mb-4 block">
-                        Beleza & Bem-estar
+                        UM TEMPO SÓ SEU
                     </span>
                     <h2 className="font-serif text-3xl md:text-4xl text-off-white">
-                        Para sua experiência <span className="italic text-emerald-400">completa</span>
+                        Onde o mundo lá fora para por um <span className="italic text-emerald-400">Instante</span>
                     </h2>
                 </div>
             </div>

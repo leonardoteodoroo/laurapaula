@@ -51,9 +51,20 @@ const Footer: React.FC = () => {
 
         <div className="w-full h-px bg-white/5 mb-8"></div>
 
-        <p className="text-gray-600 text-sm">
+        <p className="text-gray-600 text-sm mb-6">
           &copy; {new Date().getFullYear()} Laura Paula. Todos os direitos reservados.
         </p>
+
+        <div className="w-full flex justify-start">
+          <a
+            href="https://instagram.com/leonardoteodoro.of"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[8px] uppercase tracking-widest text-[#C5A059]/60 hover:text-[#C5A059] transition-colors duration-300"
+          >
+            Site by Leonardo Teodoro
+          </a>
+        </div>
       </div>
     </footer>
   );
