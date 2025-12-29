@@ -9,6 +9,8 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
+import ExtraServices from './components/ExtraServices';
+
 function App() {
   // Smooth scroll behavior for the whole app
   useEffect(() => {
@@ -28,6 +30,7 @@ function App() {
         <Authority />
         <SocialProof />
         <FAQ />
+        <ExtraServices />
       </main>
       <Footer />
       <FloatingWhatsApp />
