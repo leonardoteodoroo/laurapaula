@@ -6,21 +6,21 @@ const CASES = [
         id: 1,
         title: "Reconstrução de Fissuras",
         description: "De gretas profundas que causavam dor ao caminhar, para uma pele totalmente íntegra e regenerada.",
-        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/11.jpg?v=1766899626&q=80&w=1000&auto=format&fit=crop",
-        after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Reconstrucao_de_Fissuras.webp?v=1766901699&q=80&w=1000&auto=format&fit=crop"
+        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Antes_e_Depois_de_um_tratamento_profundo_para_pes_ressecados_e_com_rachaduras_Olha_essa_tra.webp?v=1766990687&q=80&w=1000&auto=format&fit=crop",
+        after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Antes_e_Depois_de_um_tratamento_profundo_para_pes_ressecados_e_com_rachaduras_Olha_essa_tra_1.webp?v=1766990687&q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 2,
         title: "Plástica dos Pés (Efeito Rebote)",
         description: "Remoção da camada grossa e amarelada (queratose) sem cortes. O toque aveludado que volta já na primeira sessão.",
-        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/11.jpg?v=1766899626&q=80&w=1000&auto=format&fit=crop",
-        after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Reconstrucao_de_Fissuras.webp?v=1766901699&q=80&w=1000&auto=format&fit=crop"
+        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/spa_dos_pes_um_procedimento_que_trata_rachaduras_e_ressecamentos_voce_que_se_indentifica_com_e.webp?v=1766991004&q=80&w=1000&auto=format&fit=crop",
+        after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/spa_dos_pes_um_procedimento_que_trata_rachaduras_e_ressecamentos_voce_que_se_indentifica_com_e.webp?v=1766991004&q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 3,
         title: "Ressecamento Severo (Toque de Seda)",
         description: "Aquele aspecto 'esbranquiçado' e áspero transformado em uma hidratação profunda que dura de verdade.",
-        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/11.jpg?v=1766899626&q=80&w=1000&auto=format&fit=crop",
+        before: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/ressecamento_severo_nos_calcanhares.webp?v=1766991656&q=80&w=1000&auto=format&fit=crop",
         after: "https://cdn.shopify.com/s/files/1/0668/4275/5223/files/Reconstrucao_de_Fissuras.webp?v=1766901699&q=80&w=1000&auto=format&fit=crop"
     }
 ];
