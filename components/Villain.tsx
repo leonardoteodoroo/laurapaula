@@ -4,6 +4,7 @@ import { WHATSAPP_LINK } from '../constants';
 
 const Villain: React.FC = () => {
   const [isGrayscale, setIsGrayscale] = React.useState(false);
+  const [shouldPulse, setShouldPulse] = React.useState(false);
   const imageRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
@@ -11,9 +12,16 @@ const Villain: React.FC = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           // Add a small delay so the user sees it colorful for a moment
+          // Add a small delay so the user sees it colorful for a moment
           setTimeout(() => {
             setIsGrayscale(true);
           }, 300);
+
+          // Trigger the single pulse
+          setShouldPulse(true);
+          setTimeout(() => setShouldPulse(false), 800);
+
+          observer.disconnect();
           observer.disconnect();
         }
       },
@@ -79,7 +87,10 @@ const Villain: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-graphite via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <a href={WHATSAPP_LINK} className="w-full block text-center bg-white/10 backdrop-blur-md border border-white/20 text-white py-3 rounded-lg hover:bg-emerald-900/50 transition-colors uppercase tracking-widest text-xs font-bold">
+                <a
+                  href={WHATSAPP_LINK}
+                  className={`w-full block text-center bg-white/10 backdrop-blur-md border border-white/20 text-white py-3 rounded-lg hover:bg-emerald-900/50 transition-all duration-500 uppercase tracking-widest text-xs font-bold ${shouldPulse ? 'scale-105 bg-emerald-900/60 shadow-lg shadow-emerald-500/20' : ''}`}
+                >
                   Quero a Solução
                 </a>
               </div>
@@ -101,7 +112,7 @@ const Villain: React.FC = () => {
               E aí ela reage criando ainda mais espessura para se defender. Ou seja:
               <br />
               <span className="block mt-4 text-center p-4 bg-dark-graphite/50 rounded-xl text-emerald-300 font-medium">
-                Você lixa → fica lisinho por alguns dias → volta pior.
+                Você lixa → fica lisinho por alguns dias → <span className="text-red-400">volta pior.</span>
               </span>
             </p>
 
@@ -110,15 +121,19 @@ const Villain: React.FC = () => {
                 <ShieldAlert size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-medium text-off-white mb-2">Isso tem nome: Efeito Rebote.</h3>
+                <h3 className="text-xl font-medium text-off-white mb-2">Isso tem nome: <span className="text-red-400">Efeito Rebote.</span></h3>
                 <p className="text-sm text-gray-400">
                   Não é descuido. Não é falta de hidratação. Não é “coisa da idade”. É só seu corpo tentando se proteger... E é justamente isso que eu trato.
                 </p>
               </div>
             </div>
 
-            <a href={WHATSAPP_LINK} className="inline-flex items-center gap-2 text-emerald-400 border-b border-emerald-400 pb-1 hover:text-white hover:border-white transition-all">
-              QUERO O TRATAMENTO CERTO <RefreshCw size={16} />
+            <a
+              href={WHATSAPP_LINK}
+              className="group w-full md:w-auto inline-flex items-center justify-center gap-3 bg-emerald-950/30 border border-emerald-500/30 backdrop-blur-sm px-8 py-4 rounded-xl text-emerald-400 font-medium tracking-widest uppercase text-xs hover:bg-emerald-900/40 hover:text-emerald-300 hover:border-emerald-400/50 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-emerald-900/20"
+            >
+              QUERO O TRATAMENTO CERTO
+              <RefreshCw size={16} className="transition-transform duration-700 group-hover:rotate-180" />
             </a>
           </div>
 
@@ -137,7 +152,7 @@ const Villain: React.FC = () => {
 
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

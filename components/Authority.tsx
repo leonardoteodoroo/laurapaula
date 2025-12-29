@@ -56,7 +56,7 @@ const Authority: React.FC = () => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 border border-emerald-500 text-emerald-400 rounded-full hover:bg-emerald-500 hover:text-white transition-all duration-300 uppercase tracking-widest text-sm font-medium"
+              className="w-full md:w-auto block md:inline-block text-center px-8 py-4 border border-emerald-500 text-emerald-400 rounded-full hover:bg-emerald-500 hover:text-white transition-all duration-300 uppercase tracking-widest text-sm font-medium"
             >
               Conversar com a Especialista
             </a>

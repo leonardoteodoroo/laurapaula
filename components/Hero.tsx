@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
           <div className="w-16 h-px bg-emerald-500/50 mx-auto"></div>
         </div>
 
-        <div className="opacity-0 animate-[fadeInUp_4s_ease-out_6s_forwards]">
+        <div className="opacity-0 animate-[fadeInUp_4s_ease-out_5s_forwards]">
           <a
             href={WHATSAPP_LINK}
             target="_blank"

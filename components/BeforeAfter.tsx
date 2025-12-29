@@ -29,12 +29,54 @@ const BeforeAfter: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [sliderPosition, setSliderPosition] = useState(50);
     const [isDragging, setIsDragging] = useState(false);
+    const [hasInteracted, setHasInteracted] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
+    const animationRef = useRef<number>();
 
     // Reset slider position when case changes
     useEffect(() => {
         setSliderPosition(50);
     }, [currentIndex]);
+
+    // Intersection Observer to start animation when visible
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsVisible(entry.isIntersecting);
+            },
+            { threshold: 0.5 }
+        );
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+    // Auto-animation logic (Sine wave "demo" mode)
+    useEffect(() => {
+        if (!isVisible || hasInteracted || isDragging) {
+            if (animationRef.current) cancelAnimationFrame(animationRef.current);
+            return;
+        }
+
+        const animate = () => {
+            const time = Date.now() / 1000; // time in seconds
+            // Oscillate between ~35% and ~65% (center 50 +/- 15)
+            // Speed factor: 1.5 for a gentle pace
+            const newPos = 50 + 15 * Math.sin(time * 2);
+            setSliderPosition(newPos);
+            animationRef.current = requestAnimationFrame(animate);
+        };
+
+        animationRef.current = requestAnimationFrame(animate);
+
+        return () => {
+            if (animationRef.current) cancelAnimationFrame(animationRef.current);
+        };
+    }, [isVisible, hasInteracted, isDragging]);
 
     const handleMove = (clientX: number) => {
         if (containerRef.current) {
@@ -45,6 +87,15 @@ const BeforeAfter: React.FC = () => {
         }
     };
 
+    const stopInteraction = () => {
+        setIsDragging(false);
+    };
+
+    const startInteraction = () => {
+        setIsDragging(true);
+        setHasInteracted(true); // Stop auto-animation forever
+    };
+
     const onMouseMove = (e: React.MouseEvent) => {
         if (isDragging) handleMove(e.clientX);
     };
@@ -53,14 +104,14 @@ const BeforeAfter: React.FC = () => {
         handleMove(e.touches[0].clientX);
     };
 
-    const onMouseDown = () => setIsDragging(true);
-    const onMouseUp = () => setIsDragging(false);
-
     // Global mouse up to catch drag end outside container
     useEffect(() => {
-        const handleGlobalMouseUp = () => setIsDragging(false);
-        window.addEventListener('mouseup', handleGlobalMouseUp);
-        return () => window.removeEventListener('mouseup', handleGlobalMouseUp);
+        window.addEventListener('mouseup', stopInteraction);
+        window.addEventListener('touchend', stopInteraction);
+        return () => {
+            window.removeEventListener('mouseup', stopInteraction);
+            window.removeEventListener('touchend', stopInteraction);
+        };
     }, []);
 
     const prevSlide = () => {
@@ -100,8 +151,10 @@ const BeforeAfter: React.FC = () => {
                                 ref={containerRef}
                                 onMouseMove={onMouseMove}
                                 onTouchMove={onTouchMove}
-                                onMouseDown={onMouseDown}
-                                onMouseUp={onMouseUp}
+                                onMouseDown={startInteraction}
+                                onTouchStart={startInteraction}
+                                onMouseUp={stopInteraction}
+                                onTouchEnd={stopInteraction}
                             >
                                 {/* After Image (Background/Base) */}
                                 <img

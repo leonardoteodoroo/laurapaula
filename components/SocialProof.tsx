@@ -8,6 +8,7 @@ const TESTIMONIALS = [
         problem: "Incômodo no Lençol",
         text: "Eu já tinha me acostumado com aquele barulho do calcanhar raspando no lençol toda noite. Achei que era coisa da idade. Depois da primeira sessão com a Laura, o silêncio e a maciez foram um choque.",
         stars: 5,
+        image: "https://ui-avatars.com/api/?name=Maria+R&background=047857&color=fff"
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ const TESTIMONIALS = [
         problem: "Vergonha de Sandálias",
         text: "Eu tinha uma gaveta cheia de sandálias que não usava por vergonha. Gastava fortunas em cremes de farmácia e nada resolvia o aspecto caspento. Hoje eu não penso duas vezes antes de sair descalça.",
         stars: 5,
+        image: "https://ui-avatars.com/api/?name=Ana+Paula&background=047857&color=fff"
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const TESTIMONIALS = [
         problem: "Fim do Efeito Rebote",
         text: "Sempre achei que lixar era o caminho, mas meu pé só piorava. Quando entendi o que era o efeito rebote e fiz o protocolo da Laura, vi que estava jogando tempo fora.",
         stars: 5,
+        image: "https://ui-avatars.com/api/?name=Carla+M&background=047857&color=fff"
     }
 ];
 
@@ -86,9 +89,19 @@ const SocialProof: React.FC = () => {
                                 "{item.text}"
                             </p>
 
-                            <div className="pt-6 border-t border-white/5">
-                                <h4 className="text-off-white font-serif text-lg">{item.name}</h4>
-                                <p className="text-xs text-emerald-400 uppercase tracking-wider mt-1">{item.problem}</p>
+                            <div className="pt-6 border-t border-white/5 flex items-center justify-between gap-4">
+                                <div>
+                                    <h4 className="text-off-white font-serif text-lg">{item.name}</h4>
+                                    <p className="text-xs text-emerald-400 uppercase tracking-wider mt-1">{item.problem}</p>
+                                </div>
+                                <div className="w-12 h-12 rounded-full overflow-hidden border border-white/10 flex-shrink-0">
+                                    <img
+                                        src={item.image}
+                                        alt={item.name}
+                                        className="w-full h-full object-cover"
+                                        loading="lazy"
+                                    />
+                                </div>
                             </div>
                         </div>
                     ))}
