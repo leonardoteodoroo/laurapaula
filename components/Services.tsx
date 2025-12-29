@@ -5,8 +5,8 @@ import { SERVICES, WHATSAPP_LINK } from '../constants';
 const Services: React.FC = () => {
   return (
     <section className="py-20 bg-dark-graphite relative">
-       {/* Background Noise Texture */}
-       <div className="absolute inset-0 bg-noise opacity-20 pointer-events-none"></div>
+      {/* Background Noise Texture */}
+      <div className="absolute inset-0 bg-noise opacity-20 pointer-events-none"></div>
 
       <div className="container mx-auto px-4 mb-12">
         <h2 className="font-serif text-4xl md:text-5xl text-off-white mb-4">
@@ -20,17 +20,18 @@ const Services: React.FC = () => {
       {/* Horizontal Scroll Container */}
       <div className="flex overflow-x-auto gap-6 px-4 pb-12 snap-x snap-mandatory no-scrollbar md:container md:mx-auto md:grid md:grid-cols-3 md:overflow-visible">
         {SERVICES.map((service) => (
-          <div 
-            key={service.id} 
+          <div
+            key={service.id}
             className="flex-shrink-0 w-[85vw] md:w-auto snap-center group relative rounded-2xl overflow-hidden aspect-[4/5] md:aspect-[3/4]"
           >
             {/* Image */}
-            <img 
-              src={service.imageUrl} 
-              alt={service.title} 
+            <img
+              src={service.imageUrl}
+              alt={service.title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              loading="lazy"
             />
-            
+
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-dark-graphite via-dark-graphite/40 to-transparent" />
 
@@ -43,9 +44,9 @@ const Services: React.FC = () => {
               <p className="text-gray-300 text-sm leading-relaxed line-clamp-3 group-hover:line-clamp-none transition-all duration-300">
                 {service.description}
               </p>
-              
-              <a 
-                href={WHATSAPP_LINK} 
+
+              <a
+                href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-block text-emerald-400 text-xs tracking-widest uppercase border-b border-transparent hover:border-emerald-400 transition-colors"

@@ -109,6 +109,7 @@ const BeforeAfter: React.FC = () => {
                                     alt="Depois"
                                     className="absolute inset-0 w-full h-full object-cover"
                                     draggable={false}
+                                    loading="lazy"
                                 />
                                 <div className="absolute top-4 right-4 bg-emerald-900/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-white uppercase tracking-wider z-10 border border-emerald-700/50 pointer-events-none">
                                     Depois
@@ -144,6 +145,7 @@ const BeforeAfter: React.FC = () => {
                                         className="absolute top-0 left-0 h-full object-cover max-w-none"
                                         style={{ width: `${(100 / sliderPosition) * 100}%` }}
                                         draggable={false}
+                                        loading="lazy"
                                     />
                                     <div className="absolute top-4 left-4 bg-red-900/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-white uppercase tracking-wider z-10 border border-red-700/50 pointer-events-none">
                                         Antes

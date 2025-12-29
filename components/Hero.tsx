@@ -26,6 +26,7 @@ const Hero: React.FC = () => {
           src="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=2400&auto=format&fit=crop"
           alt="Mulher com vergonha dos pés rachados procurando tratamento de podologia para fissuras e calcanhares ressecados."
           className="w-full h-full object-cover opacity-60"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark-graphite via-dark-graphite/0 to-transparent" />
       </div>

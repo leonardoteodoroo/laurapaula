@@ -72,9 +72,10 @@ const Villain: React.FC = () => {
                 src="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/11.jpg?v=1766899626&q=80&w=1000&auto=format&fit=crop"
                 alt="Pés com ressecamento"
                 className={`w-full h-full object-cover transition-all duration-[1300ms] ease-in-out ${isGrayscale
-                    ? 'opacity-85 grayscale hover:grayscale-0'
-                    : 'opacity-100 grayscale-0'
+                  ? 'opacity-85 grayscale hover:grayscale-0'
+                  : 'opacity-100 grayscale-0'
                   }`}
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-graphite via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">

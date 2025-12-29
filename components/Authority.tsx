@@ -16,6 +16,7 @@ const Authority: React.FC = () => {
                 src="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/A_EspecialistaLaura_Paula.webp?v=1766902278?q=80&w=1000&auto=format&fit=crop"
                 alt="Laura Paula - Especialista em Podologia"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                loading="lazy"
               />
 
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 pt-20">
