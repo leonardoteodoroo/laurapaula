@@ -1,7 +1,7 @@
 import { ServiceItem, FaqItem, SocialLink } from './types';
 
 export const PHONE_NUMBER = "5535992704972";
-export const WHATSAPP_LINK = `https://wa.me/${PHONE_NUMBER}?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20Laura.`;
+export const WHATSAPP_LINK = "https://wa.me/5535992704972?text=Ol%C3%A1%20Laura!%20Vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20como%20ter%20esse%20resultado%20de%20p%C3%A9s%20lisos%20logo%20na%20primeira%20sess%C3%A3o.%20Pode%20me%20ajudar?";
 export const INSTAGRAM_LINK = "https://instagram.com/laurapaula_naildesing";
 
 export const SERVICES: ServiceItem[] = [
