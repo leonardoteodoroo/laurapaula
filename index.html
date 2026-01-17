@@ -15,6 +15,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laura Paula | Podologia de Alta Performance</title>
+  <link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=2400&auto=format&fit=crop" imagesrcset="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=600&auto=format&fit=crop 600w, https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=1200&auto=format&fit=crop 1200w, https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=2400&auto=format&fit=crop 2400w" imagesizes="100vw" fetchpriority="high">
   <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/favicon.png?v=1766992712" />
   <meta name="description"
     content="Recupere a saúde e a beleza dos seus pés com protocolos exclusivos de podologia de alta performance.">
@@ -22,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=optional"
     rel="stylesheet">
   <script>
     tailwind.config = {
@@ -46,10 +47,6 @@
               '0%': { opacity: '0', transform: 'translate3d(0, 20px, 0)' },
               '100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' },
             },
-            bounceX: {
-              '0%, 100%': { transform: 'translateX(-50%)' },
-              '50%': { transform: 'translateX(-50%) scale(1.1)' },
-            },
             pulseHandle: {
               '0%, 100%': { boxShadow: '0 0 0 0 rgba(16, 185, 129, 0.7)', transform: 'translate(-50%, -50%) scale(1)' },
               '50%': { boxShadow: '0 0 0 10px rgba(16, 185, 129, 0)', transform: 'translate(-50%, -50%) scale(1.1)' },
@@ -57,7 +54,6 @@
           },
           animation: {
             'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
-            'bounce-x': 'bounceX 1s infinite',
             'pulse-handle': 'pulseHandle 2s infinite',
           }
         }
