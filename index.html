@@ -1,105 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M4CHW3MC');</script>
-  <!-- End Google Tag Manager -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laura Paula | Podologia de Alta Performance</title>
-  <link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=2400&auto=format&fit=crop" imagesrcset="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=600&auto=format&fit=crop 600w, https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=1200&auto=format&fit=crop 1200w, https://cdn.shopify.com/s/files/1/0668/4275/5223/files/hero.webp?q=80&w=2400&auto=format&fit=crop 2400w" imagesizes="100vw" fetchpriority="high">
-  <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/favicon.png?v=1766992712" />
-  <meta name="description"
-    content="Recupere a saúde e a beleza dos seus pés com protocolos exclusivos de podologia de alta performance.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=optional"
-    rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'dark-graphite': '#0F110C',
-            'off-white': '#FDFCFB',
-            'emerald-deep': '#2D5A27',
-            'emerald-light': '#3E7B36',
-          },
-          fontFamily: {
-            serif: ['"Playfair Display"', 'serif'],
-            sans: ['"Inter"', 'sans-serif'],
-          },
-          backgroundImage: {
-            'noise': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMGYxMTBjIiBmaWxsLW9wYWNpdHk9IjAuOSIvPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+')",
-          },
-          keyframes: {
-            fadeInUp: {
-              '0%': { opacity: '0', transform: 'translate3d(0, 20px, 0)' },
-              '100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' },
-            },
-            pulseHandle: {
-              '0%, 100%': { boxShadow: '0 0 0 0 rgba(16, 185, 129, 0.7)', transform: 'translate(-50%, -50%) scale(1)' },
-              '50%': { boxShadow: '0 0 0 10px rgba(16, 185, 129, 0)', transform: 'translate(-50%, -50%) scale(1.1)' },
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impetus Pro - Site de Alta Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-black': '#101010',
+                        'brand-purple': '#9370FF',
+                        'brand-lime': '#B2FF21',
+                        'brand-gray': '#CECECE',
+                    },
+                    fontFamily: {
+                        sans: ['"Chakra Petch"', 'sans-serif'],
+                    },
+                }
             }
-          },
-          animation: {
-            'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
-            'pulse-handle': 'pulseHandle 2s infinite',
-          }
         }
-      }
-    }
-  </script>
-  <style>
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-    }
-
-    body {
-      background-color: #0F110C;
-      color: #FDFCFB;
-    }
-  </style>
-
-
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/assets/index-ByQHp2LS.js"></script>
+    </script>
+    <style>
+        body {
+            background-color: #101010;
+            color: white;
+            font-family: 'Chakra Petch', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('assets/hero.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
+<body class="antialiased">
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4CHW3MC" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div id="root"></div>
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full p-6 z-50">
+        <div class="container mx-auto">
+            <img src="assets/logo.webp" alt="Impetus Pro Logo" class="h-12 md:h-16">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-black/60 z-0"></div> <!-- Overlay -->
+        <div class="container mx-auto px-6 relative z-10 flex flex-col items-center justify-center text-center mt-20">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 max-w-4xl leading-tight">
+                Aumente em até <span class="text-brand-lime">10x as vendas</span> do seu negócio com um site de alto impacto.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl">
+                Personalizado, rápido e de alta conversão. Destaque sua empresa e aumente o lucro de forma recorrente.
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=5547999230102&text=Ol%C3%A1,%20vim%20da%20sua%20p%C3%A1gina%20e%20gostaria%20de%20um%20site%20de%20alta%20performance." target="_blank" class="bg-brand-lime text-brand-black hover:bg-white transition-colors duration-300 font-bold py-4 px-8 rounded-full text-lg flex items-center gap-2">
+                <i class="fab fa-whatsapp text-2xl"></i>
+                Quero aumentar minhas vendas
+            </a>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-brand-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Seu site será desenvolvido por <span class="text-brand-purple">profissionais</span> seguindo <span class="text-brand-lime">4 etapas</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-brand-purple transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-purple to-brand-lime flex items-center justify-center mb-6 mx-auto md:mx-0">
+                        <i class="fas fa-magnifying-glass-chart text-2xl text-brand-black"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-brand-lime">Etapa 1: Estudo</h3>
+                    <p class="text-gray-400 text-sm">
+                        Realizamos coleta e análise de dados sobre suas necessidades e público-alvo. Estudamos o mercado para gerar resultados mais eficazes e precisos.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-brand-purple transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-purple to-brand-lime flex items-center justify-center mb-6 mx-auto md:mx-0">
+                        <i class="fas fa-pen-ruler text-2xl text-brand-black"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-brand-lime">Etapa 2: Personalização</h3>
+                    <p class="text-gray-400 text-sm">
+                        Desenvolvemos um design exclusivo e 100% personalizado para seu site, pensado estrategicamente para converter visitantes em clientes.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-brand-purple transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-purple to-brand-lime flex items-center justify-center mb-6 mx-auto md:mx-0">
+                        <i class="fas fa-code text-2xl text-brand-black"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-brand-lime">Etapa 3: Desenvolvimento</h3>
+                    <p class="text-gray-400 text-sm">
+                        Seu site será colocado ao ar e responsivo para todos os dispositivos, com efeitos visuais sofisticados para enriquecer a experiência do usuário.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-brand-purple transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-purple to-brand-lime flex items-center justify-center mb-6 mx-auto md:mx-0">
+                        <i class="fas fa-rocket text-2xl text-brand-black"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-brand-lime">Etapa 4: Otimização</h3>
+                    <p class="text-gray-400 text-sm">
+                        Otimizamos a velocidade do seu site para assegurar uma excelente experiência ao cliente e evitar gastos desnecessários em anúncios.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+            <!-- Image -->
+            <div class="w-full lg:w-1/2 relative">
+                 <!-- Using the downloaded image -->
+                <img src="assets/about.webp" alt="Paulo Baran" class="w-full h-auto rounded-xl shadow-2xl relative z-10 border border-white/10">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-brand-purple blur-3xl opacity-30 z-0"></div>
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-brand-lime blur-3xl opacity-30 z-0"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Quem estará à frente do seu <span class="text-brand-purple">projeto?</span>
+                </h2>
+                <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
+                    <p>
+                        <strong class="text-white">Paulo Baran</strong> é o CEO da Impetus Pro e possui mais de dois anos de experiência na área, <span class="text-brand-lime font-bold">tendo desenvolvido mais de 150 sites.</span>
+                    </p>
+                    <p>
+                        Com vasta experiência no desenvolvimento de sites e landing pages, ele criou diversos <span class="text-brand-lime font-bold">sites que geraram múltiplos seis dígitos em faturamento</span> para seus clientes.
+                    </p>
+                    <p>
+                        Trabalhando com uma <span class="text-brand-lime font-bold">estrutura validada e um design estratégico</span>, assegurando que os projetos não sejam apenas visualmente atraentes, mas também funcionais, focando no objetivo principal: <span class="text-brand-lime font-bold">a conversão.</span>
+                    </p>
+                </div>
+                 <div class="mt-8">
+                    <a href="https://api.whatsapp.com/send?phone=5547999230102&text=Ol%C3%A1,%20vim%20da%20sua%20p%C3%A1gina%20e%20gostaria%20de%20um%20site%20de%20alta%20performance." target="_blank" class="inline-flex items-center gap-2 text-brand-lime border border-brand-lime px-6 py-3 rounded-full hover:bg-brand-lime hover:text-brand-black transition duration-300 font-bold">
+                        <i class="fab fa-whatsapp text-xl"></i> Solicitar orçamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/10 text-center text-gray-500 text-sm">
+        <div class="container mx-auto px-6">
+            <p>Copyright © 2024 Impetus Pro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
-
 </html>
