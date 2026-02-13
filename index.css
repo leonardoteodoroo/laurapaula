@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-graphite: #0F110C;
+  --color-off-white: #FDFCFB;
+  --color-emerald-deep: #2D5A27;
+  --color-emerald-light: #3E7B36;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+  --animate-bounce-x: bounceX 1s infinite;
+  --animate-pulse-handle: pulseHandle 2s infinite;
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translate3d(0, 20px, 0); }
+    100% { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+  @keyframes bounceX {
+    0%, 100% { transform: translateX(-50%); }
+    50% { transform: translateX(-50%) scale(1.1); }
+  }
+  @keyframes pulseHandle {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); transform: translate(-50%, -50%) scale(1); }
+    50% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); transform: translate(-50%, -50%) scale(1.1); }
+  }
+}
+
+/* Custom background utility */
+@utility bg-noise {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMGYxMTBjIiBmaWxsLW9wYWNpdHk9IjAuOSIvPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+');
+}
