@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+
+# IA / Bots
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://laurapaula.semprenamoda.com.br/sitemap.xml
